@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div className="flex flex-column pb3 ph3" style={{ height: "70vh" }}>
-      <h1 className="f1 tc">React skeleton</h1>
+      <h1 className="f1 tc">BusiScan360</h1>
       <p className="tc f4 fw4">
         You should run <code>setup.py</code> to auto-rename a bunch of strings.{" "}
         <br />

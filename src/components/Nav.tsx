@@ -27,7 +27,7 @@ const Nav = () => {
       >
         <div className="flex items-center justify-between bar-container">
           <a className="nav-title" href="#home">
-            React skeleton
+            BusiScan360
           </a>
           <div className="mobile">
             <Hamburger
