@@ -1,16 +1,24 @@
-import Alert from "src/components/Alert";
-import Footer from "src/components/Footer";
-import Home from "src/components/Home";
-import Nav from "src/components/Nav";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Alert from "src/components/modules/Alert";
+import Footer from "src/components/modules/Footer";
+import Home from "src/components/pages/Home";
+import Nav from "src/components/modules/Nav";
+import NotFound from "src/components/pages/NotFound";
+import About from "src/components/pages/About";
+import Upload from "src/components/pages/Upload";
 
-// TODO: build your app!
 const App = () => (
-  <>
+  <BrowserRouter>
     <Nav />
-    <Home />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/upload" element={<Upload />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
     <Alert />
     <Footer />
-  </>
+  </BrowserRouter>
 );
 
 export default App;
