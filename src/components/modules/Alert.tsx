@@ -1,5 +1,5 @@
 import useAlert from "src/hooks/useAlert";
-import "src/components/alert.css";
+import "src/components/modules/alert.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleCheck,

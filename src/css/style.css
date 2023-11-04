@@ -1,5 +1,5 @@
 :root {
-  --breakpoint: 768px;
+  --nav-height: 64px;
 }
 
 body {
@@ -26,4 +26,9 @@ a {
 
 .bordering {
   border: 2px solid green;
+}
+
+.page-title-text {
+  font-weight: 700;
+  font-size: calc(1.7rem + 1.5vw);
 }

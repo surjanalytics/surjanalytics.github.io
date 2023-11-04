@@ -1,0 +1,19 @@
+:root {
+  --link-color: #e7040f;
+}
+
+.default-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link {
+  color: var(--link-color);
+}
+
+@media (hover: hover) {
+  .link:hover {
+    text-decoration: underline;
+  }
+}
