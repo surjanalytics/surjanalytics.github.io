@@ -1,5 +1,7 @@
 import usePageTitle from "src/hooks/usePageTitle";
 import "src/components/pages/home.css";
+import Button from "src/components/basic/Button";
+import Link from "src/components/basic/Link";
 
 const Home = () => {
   usePageTitle("FirmEye");
@@ -11,6 +13,14 @@ const Home = () => {
           Your automated tool that researches, formats, and extrapolates
           business data.
         </p>
+        <div className="flex items-center">
+          <Link to="/about" unstyled className="mr3">
+            <Button inverse>Learn more</Button>
+          </Link>
+          <Link to="/upload" unstyled>
+            <Button inverse>Upload</Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

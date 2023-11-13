@@ -27,6 +27,7 @@ const About = () => {
             employees, and average employee salary
           </li>
         </ol>
+        Let FirmEye automate hours of research, formatting, and extrapolation!
       </p>
     </Page>
   );
