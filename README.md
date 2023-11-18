@@ -1,3 +1,3 @@
-# FirmEye
+# Adam's Website
 
-By Surjanalytics
+Built 100% from scratch in React.

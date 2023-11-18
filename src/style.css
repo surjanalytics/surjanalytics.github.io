@@ -1,0 +1,137 @@
+:root {
+  --nav-padding: 5rem;
+  --accent: #e7040f;
+  --bg-main: #222;
+  --text-main: #faf3f9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem var(--nav-padding);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent) !important;
+  opacity: 1 !important;
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.accent-hover {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-scrolled {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(2rem);
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.navlink {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  display: inline-block;
+}
+
+.navlink-hover * {
+  transition: border-color 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.navlink-selected * {
+  border-bottom: 2px solid var(--accent);
+}
+
+.navlink-active * {
+  border-bottom: 2px solid var(--accent);
+}
+
+.marquee {
+  background-image: url("./img/marquee.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.intro {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+section {
+  padding: var(--nav-padding) var(--nav-padding) 0 var(--nav-padding);
+  margin: 0;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden-text {
+  color: transparent;
+  transition: color 0.3s ease-in-out;
+}
+
+.hidden-text::selection {
+  color: white;
+  background-color: var(--accent);
+}
+
+.hidden-text:focus-visible {
+  color: inherit;
+}
+
+.bordering {
+  border: 2px solid orange;
+}
