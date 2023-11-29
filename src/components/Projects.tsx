@@ -10,14 +10,14 @@ type Props = {
 const PROJECTS = [
   {
     title: "FirmEye",
-    img: "/img/firmeye.png",
-    href: "/firmeye/",
+    img: "/firmeye.png",
+    href: "https://surjanalytics.github.io/firmeye/",
     description: "Your analysis tool for getting all the info on any business.",
   },
   {
     title: "ElectionEye",
-    img: "/img/electioneye.png",
-    href: "/electioneye/",
+    img: "/electioneye.png",
+    href: "https://google.com/not_found",
     description: "A tool for analyzing the 2024 US Presidential Election.",
   },
 ] as const;
@@ -44,7 +44,7 @@ const Projects = () => {
     <Section
       id="projects"
       title="Projects"
-      description="Here's what I've been up to."
+      description="Here's what we've done."
     >
       <div className="flex flex-wrap justify-around">
         {PROJECTS.map((project) => (

@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Spin as Hamburger } from "hamburger-react";
+import { Twirl as Hamburger } from "hamburger-react";
 import { useWatchScroll } from "@adamjanicki/core-ui";
+import { ReactComponent as Logo } from "src/img/logo.svg";
 
 const SCROLL_THRESHOLD = 100;
 
@@ -34,8 +35,8 @@ const Nav = () => {
       }`}
     >
       <div className="flex items-center justify-between bar-container">
-        <a className="nav-title" href="#home">
-          Surjanalytics
+        <a href="#home">
+          <Logo width="32px" height="32px" fill="#fff" />
         </a>
         <div className="mobile">
           <Hamburger

@@ -43,7 +43,7 @@ const ContactLink = ({ icon, href, title, description }: ContactInfo) => {
 
 const Contact = () => {
   return (
-    <Section title="Contact" id="contact" description="Connect with us.">
+    <Section title="Contact" id="contact" description="Get in touch with us.">
       <div className="flex flex-wrap justify-around">
         {CONTACTS.map((contact) => (
           <ContactLink key={contact.title} {...contact} />
